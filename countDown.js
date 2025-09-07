@@ -1,4 +1,4 @@
-class Countdown {
+export default class Countdown {
 
     get TIMESTAMP_SECOND() { return 1000; }
     get TIMESTAMP_MINUTE() { return 60 * this.TIMESTAMP_SECOND; }
@@ -341,11 +341,12 @@ class Countdown {
 
 if (typeof(window) !== 'undefined') {
     window.Countdown = Countdown;
+    
 }
 
 var cd = new Countdown({
     cont: document.querySelector('.container'),
-    endDate: 1553468400000,
+    endDate: 20250504010201,
     outputTranslation: {
         year: 'Years',
         week: 'Weeks',
@@ -359,6 +360,4 @@ var cd = new Countdown({
 });
 
 
-
-
-
+cd.start();
