@@ -346,14 +346,14 @@ if (typeof(window) !== 'undefined') {
 
 var cd = new Countdown({
     cont: document.querySelector('.container'),
-    endDate: 20250504010201,
+    date: new Date('October 3, 2025 00:00:00').getTime(),
     outputTranslation: {
         year: 'Years',
-        week: 'Weeks',
-        day: 'Days',
-        hour: 'Hours',
+        week: 'Semaines',
+        day: 'Jours',
+        hour: 'Heures',
         minute: 'Minutes',
-        second: 'Seconds',
+        second: 'Secondes',
     },
     endCallback: null,
     outputFormat: 'week|day|hour|minute|second',
