@@ -1,4 +1,4 @@
-export default class Countdown {
+class Countdown {
 
     get TIMESTAMP_SECOND() { return 1000; }
     get TIMESTAMP_MINUTE() { return 60 * this.TIMESTAMP_SECOND; }
@@ -357,6 +357,7 @@ var cd = new Countdown({
     endCallback: null,
     outputFormat: 'week|day|hour|minute|second',
 });
+
 
 
 
